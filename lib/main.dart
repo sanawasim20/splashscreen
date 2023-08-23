@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'splash_screen.dart';
 
 void main() {
+  // Initialize the widget binding before runApp
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(MyApp());
 }
 
@@ -14,4 +17,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
